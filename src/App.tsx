@@ -1,6 +1,4 @@
 import {useEffect, useState} from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "trmd3components/trmd3.css";
 import Button from "trmd3components/Button";
 import HorizontalCard from "trmd3components/HorizontalCard";
@@ -19,8 +17,6 @@ function App() {
 	const handleToggleTheme = (): void => {
 		toggleTheme(_theme, setTheme);
 	};
-
-	console.log("hi");
 
 	return (
 		<>
