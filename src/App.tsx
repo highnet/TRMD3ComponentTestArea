@@ -7,8 +7,6 @@ import HorizontalCard from "trmd3components/HorizontalCard";
 import {getPreferredScheme, toggleTheme} from "trmd3components/Themeing";
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	const [_theme, setTheme] = useState(
 		localStorage.getItem("theme") || getPreferredScheme() + "-theme"
 	);
