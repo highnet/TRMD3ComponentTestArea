@@ -22,6 +22,8 @@ function App() {
 		toggleTheme(_theme, setTheme);
 	};
 
+	console.log("hi");
+
 	return (
 		<>
 			<Button onClick={handleToggleTheme}>Toggle Theme</Button>
