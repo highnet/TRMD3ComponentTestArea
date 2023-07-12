@@ -5,6 +5,8 @@ import BottomAppBar from "trmd3components/BottomAppBar";
 import TopAppBar from "trmd3components/TopAppBar";
 import Badge from "trmd3components/Badge";
 import Button from "trmd3components/Button";
+import HorizontalCard from "trmd3components/HorizontalCard";
+import StackedCard from "trmd3components/StackedCard";
 import Component from "trmd3components/Component";
 
 function App() {
@@ -35,15 +37,7 @@ function App() {
 
 	return (
 		<>
-			<Component>
-				<Badge
-					configuration={"multiple-digits"}
-					anchor="top-right"
-					xOffset={-2.5}
-					yOffset={-0.6}>
-					123
-				</Badge>
-			</Component>
+			<StackedCard imageSrc="3.png" configuration="filled" />
 		</>
 	);
 }
