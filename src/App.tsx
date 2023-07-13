@@ -8,6 +8,31 @@ import Button from "trmd3components/Button";
 import HorizontalCard from "trmd3components/HorizontalCard";
 import StackedCard from "trmd3components/StackedCard";
 import Component from "trmd3components/Component";
+import Carousel from "trmd3components/Carousel";
+import Checkbox from "trmd3components/Checkbox";
+import InputChip from "trmd3components/InputChip";
+import AssistChip from "trmd3components/AssistChip";
+import {openDialogId} from "trmd3components/Modals";
+import Dialog from "trmd3components/Dialog";
+import HorizontalDivider from "trmd3components/HorizontalDivider";
+import VerticalDivider from "trmd3components/VerticalDivider";
+import ExtendedFab from "trmd3components/ExtendedFab";
+import Fab from "trmd3components/Fab";
+import Icon from "trmd3components/Icon";
+import IconButton from "trmd3components/IconButton";
+import List from "trmd3components/List";
+import ListItem from "trmd3components/ListItem";
+import MenuItem from "trmd3components/MenuItem";
+import Menu from "trmd3components/Menu";
+import NavigationDrawerItem from "trmd3components/NavigationDrawerItem";
+import NavigationDrawer from "trmd3components/NavigationDrawer";
+import NavigationRail from "trmd3components/NavigationRail";
+import RadioButton from "trmd3components/RadioButton";
+import SegmentedButton from "trmd3components/SegmentedButton";
+import SegmentedButtonGroup from "trmd3components/SegmentedButtonGroup";
+import SideSheet from "trmd3components/SideSheet";
+import Typography from "trmd3components/Typography";
+import Slider from "trmd3components/Slider";
 
 function App() {
 	const [_theme, setTheme] = useState(
@@ -37,7 +62,9 @@ function App() {
 
 	return (
 		<>
-			<StackedCard imageSrc="3.png" configuration="filled" />
+			<Slider value={80} />
+			<Slider step={5} min={50} max={150} value={100} />
+			<Slider min={-100} max={100} value={-60} />{" "}
 		</>
 	);
 }
