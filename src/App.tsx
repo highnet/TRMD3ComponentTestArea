@@ -12,7 +12,7 @@ import Carousel from "trmd3components/Carousel";
 import Checkbox from "trmd3components/Checkbox";
 import InputChip from "trmd3components/InputChip";
 import AssistChip from "trmd3components/AssistChip";
-import {openDialogId} from "trmd3components/Modals";
+import {activateSnackBarId, openDialogId} from "trmd3components/Modals";
 import Dialog from "trmd3components/Dialog";
 import HorizontalDivider from "trmd3components/HorizontalDivider";
 import VerticalDivider from "trmd3components/VerticalDivider";
@@ -33,6 +33,10 @@ import SegmentedButtonGroup from "trmd3components/SegmentedButtonGroup";
 import SideSheet from "trmd3components/SideSheet";
 import Typography from "trmd3components/Typography";
 import Slider from "trmd3components/Slider";
+import SnackBar from "trmd3components/SnackBars";
+import Switch from "trmd3components/Switch";
+import TextField from "trmd3components/TextField";
+import Tooltip from "trmd3components/Tooltip";
 
 function App() {
 	const [_theme, setTheme] = useState(
@@ -62,9 +66,17 @@ function App() {
 
 	return (
 		<>
-			<Slider value={80} />
-			<Slider step={5} min={50} max={150} value={100} />
-			<Slider min={-100} max={100} value={-60} />{" "}
+			<Typography variant="text-display-large">
+				Display Large - Roboto 57/54 . 0
+			</Typography>
+
+			<Typography variant="text-display-medium">
+				Display Medium - Roboto 45/52 . 0
+			</Typography>
+
+			<Typography variant="text-display-small">
+				Display Small - Roboto 36/44 . 0
+			</Typography>
 		</>
 	);
 }
