@@ -64,21 +64,7 @@ function App() {
 		toggleTheme(_theme, setTheme);
 	};
 
-	return (
-		<>
-			<Typography variant="text-display-large">
-				Display Large - Roboto 57/54 . 0
-			</Typography>
-
-			<Typography variant="text-display-medium">
-				Display Medium - Roboto 45/52 . 0
-			</Typography>
-
-			<Typography variant="text-display-small">
-				Display Small - Roboto 36/44 . 0
-			</Typography>
-		</>
-	);
+	return <></>;
 }
 
 export default App;
